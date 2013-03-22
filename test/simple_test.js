@@ -12,4 +12,8 @@ describe('Simple', function () {
     it('Compiles a project', function () {
         assert(fs.existsSync('tmp/simple/public/js/simple.bundle.js'));
     });
+
+    it('Minifies a project', function () {
+        assert(fs.existsSync('tmp/simple/public/js/simple.bundle.min.js'));
+    });
 });
