@@ -2,6 +2,8 @@
 
 > Grunt wrapper for client-compiler.
 
+[![Build Status](https://travis-ci.org/rubenv/grunt-client-compiler.png?branch=master)](https://travis-ci.org/rubenv/grunt-client-compiler)
+
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
 
