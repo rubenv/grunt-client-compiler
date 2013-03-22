@@ -147,6 +147,7 @@ grunt.initConfig({
                 pack: ['jquery']
             }
         }, 
+
         module: {
             options: {
                 path: 'module-src',
@@ -163,4 +164,5 @@ Not how you can share options among targets by specifying them globally.
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+
+* 2013-03-22   v0.1.0   Initial release.
