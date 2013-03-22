@@ -160,6 +160,16 @@ grunt.initConfig({
 
 Not how you can share options among targets by specifying them globally.
 
+## The "client_compiler_bundle" task
+
+This task does the same as the `client_compiler` task, yet does not minify the code (and will thus be a lot faster).
+
+Accepts the same options.
+
+## The "client_compiler_min" task
+
+Only performs the minification phase. Assumse that you have ran `client_compiler_bundle` before.
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 

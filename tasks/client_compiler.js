@@ -2,17 +2,25 @@
 
 var clientCompiler = require('client-compiler');
 
+function getCompiler(self) {
+    var basePath = process.cwd();
+    var options = self.options({
+        verbose: false
+    });
+
+    return new clientCompiler.Compiler(basePath, self.target, options);
+}
+
 module.exports = function (grunt) {
-    return grunt.registerMultiTask('client_compiler', 'Compile client-side bundles', function () {
-        var done = this.async();
-        var basePath = process.cwd();
+    grunt.registerMultiTask('client_compiler', 'Compile client-side bundles', function () {
+        getCompiler(this).compile(this.async());
+    });
 
-        var options = this.options({
-            verbose: false
-        });
-        options.wait = true;
+    grunt.registerMultiTask('client_compiler_bundle', 'Compile client-side bundles: Bundle only', function () {
+        getCompiler(this).compileBundle(this.async());
+    });
 
-        var compiler = new clientCompiler.Compiler(basePath, this.target, options);
-        compiler.compile(done);
+    grunt.registerMultiTask('client_compiler_min', 'Compile client-side bundles: Minify only', function () {
+        getCompiler(this).compileMin(this.async());
     });
 };
