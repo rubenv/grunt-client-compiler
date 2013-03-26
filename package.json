@@ -1,7 +1,7 @@
 {
   "name": "grunt-client-compiler",
   "description": "Grunt wrapper for client-compiler.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/rubenv/grunt-client-compiler",
   "author": {
     "name": "Ruben Vermeersch",
