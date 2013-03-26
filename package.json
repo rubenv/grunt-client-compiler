@@ -44,6 +44,6 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "client-compiler": "~0.1.7"
+    "client-compiler": "~0.1.8"
   }
 }
