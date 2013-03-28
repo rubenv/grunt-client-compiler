@@ -67,6 +67,15 @@ Default value: `false`
 
 Whether or not to output progress messages.
 
+#### options.logCb
+Type: `Function(verb, message)`
+Default value: `null`
+
+A custom logging function. Takes two arguments:
+
+* `verb`: A keyword that identifies the action.
+* `message`: The full message details.
+
 #### options.libPath
 Type: `String`
 Default value: `'lib/js'`
